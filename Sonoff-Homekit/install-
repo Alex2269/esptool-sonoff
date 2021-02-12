@@ -1,8 +1,0 @@
-
-
-git clone https://github.com/espressif/esptool
-git clone = https://github.com/Gruppio/Sonoff-Homekit.git
-
-
-flashing:
-bash flash.sh
