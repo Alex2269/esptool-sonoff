@@ -7,7 +7,7 @@ downloading:
 flashing:
 
 git clone git@github.com:Alex2269/esptool-sonoff.git
-cd Sonoff-Homekit
+cd esptool-sonoff/Sonoff-Homekit
 sh flash.sh
 ```
 
