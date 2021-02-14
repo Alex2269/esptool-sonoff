@@ -2,7 +2,9 @@
 
 export PATH=$(pwd)/../esptool:$PATH
 
-POWERON_STATE="ON" # Change this to "OFF" if you want that your Sonoff will be OFF when powered 
+VARIANT="ON" # Change this to "OFF" if you want that your Sonoff will be OFF when powered 
+# VARIANT="OFF" # Change this to "OFF" if you want that your Sonoff will be OFF when powered 
+# VARIANT="OTA" # alternative OTA 
 
 SONOFF_PORT="/dev/ttyUSB0"
 
@@ -15,4 +17,5 @@ esptool.py \
             -ff 40m \
             0x0 ./firmware/rboot.bin \
             0x1000 ./firmware/blank_config.bin \
-            0x2000 ./firmware/Sonoff_$POWERON_STATE.bin
+            0x2000 ./firmware/Sonoff_$VARIANT.bin
+
