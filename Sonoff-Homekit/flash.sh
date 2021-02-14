@@ -2,8 +2,9 @@
 
 export PATH=$(pwd)/../esptool:$PATH
 
-VARIANT="ON"    # Change this to "ON"  if you want that your Sonoff will be OFF when powered
+VARIANT="ON"   # Change this to "ON"  if you want that your Sonoff will be OFF when powered
 # VARIANT="OFF"   # Change this to "OFF" if you want that your Sonoff will be OFF when powered
+# VARIANT="basic"   # Change this to "Sonoff_basic.bin" version
 # VARIANT="OTA"   # alternative OTA
 
 SONOFF_PORT="/dev/ttyUSB0"
