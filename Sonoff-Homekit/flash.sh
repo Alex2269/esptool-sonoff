@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH=$(pwd)/../esptool:$PATH
+export PATH=$(pwd)/esptool:$PATH
 
 VARIANT="ON"   # Change this to "ON"  if you want that your Sonoff will be OFF when powered
 # VARIANT="OFF"   # Change this to "OFF" if you want that your Sonoff will be OFF when powered
