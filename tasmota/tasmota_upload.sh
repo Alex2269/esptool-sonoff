@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export PATH=$(pwd)/esptool:$PATH
+export PATH=$(pwd)/../esptool:$PATH
 
 # These files are needed for flashing Tasmota32 with esptool.py to an ESP32.
 PORT="/dev/ttyUSB0"
