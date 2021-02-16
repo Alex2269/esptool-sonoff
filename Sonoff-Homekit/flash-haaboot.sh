@@ -61,9 +61,9 @@ echo "${CYAN}\t\n ctrl+c for stoped tty monitor\n${NC}"
 sleep 1 # sleeping one seconds
 echo "${YELLOW}\t\n ctrl+c for exit \n${NC}"
 sleep 1 # sleeping one seconds
-stty -F /dev/ttyUSB0 115200 cs8 -cstopb -parity -icanon min 1 time 1
+stty -F $PORT 115200 cs8 -cstopb -parity -icanon min 1 time 1
 # read usbseriall
 sleep 1 # sleeping one seconds
-cat /dev/ttyUSB0
+cat $PORT
 
 
