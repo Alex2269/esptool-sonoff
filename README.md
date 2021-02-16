@@ -13,6 +13,11 @@ for esp8266 sonoff:
 cd esptool-sonoff/Sonoff-Homekit
 sh flash.sh
 
+for esp8266 HAA OTA - SETUP MODE:
+cd esptool-sonoff/Sonoff-Homekit
+sh flash-haaboot.sh
+
+
 for esp32 tasmota:
 cd esptool-sonoff/tasmota_esp32
 sh flash.sh
