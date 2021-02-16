@@ -2,8 +2,8 @@
 
 export PATH=$(pwd)/../esptool:$PATH
 
-VARIANT="haaboot"
-# VARIANT="Sonoff_basic"    # Change this to "Sonoff_basic.bin" version
+# VARIANT="haaboot"
+VARIANT="Sonoff_basic"    # Change this to "Sonoff_basic.bin" version
 # VARIANT="Sonoff_OFF"    # Change this to "OFF" if you want that your Sonoff will be OFF when powered
 # VARIANT="Sonoff_ON"    # Change this to "ON"  if you want that your Sonoff will be OFF when powered
 # VARIANT="Sonoff_OTA"    # alternative OTA
@@ -29,6 +29,11 @@ esptool.py \
             0x0 firmware/rboot.bin \
             0x1000 firmware/blank_config.bin \
             0x2000 firmware/$VARIANT.bin
+
+
+# is not required below
+# all down code no need
+# all code below, only to view result in tty-terminal
 
 
 # color defines
