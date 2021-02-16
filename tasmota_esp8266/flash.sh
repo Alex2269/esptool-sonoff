@@ -63,3 +63,4 @@ stty -F $PORT 115200 cs8 -cstopb -parity -icanon min 1 time 1
 sleep 1 # sleeping one seconds
 cat $PORT
 
+
