@@ -8,6 +8,9 @@ flashing:
 
 git clone git@github.com:Alex2269/esptool-sonoff.git
 
+for esp8266 RavenSystem:
+cd esptool-sonoff/RavenSystem
+sh flash.sh
 
 for esp8266 sonoff:
 cd esptool-sonoff/Sonoff-Homekit
