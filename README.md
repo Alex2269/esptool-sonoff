@@ -40,7 +40,7 @@ cd /tmp
 wget https://github.com/Alex2269/esptool-sonoff/archive/main.zip -O esptool-sonoff.zip
 unzip esptool-sonoff.zip -d /tmp
 cd /tmp/esptool-sonoff-main/RavenSystem
-sh flash.sh
+sh flash-fullhaaboot.sh
 
 
 ```
