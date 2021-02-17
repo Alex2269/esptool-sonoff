@@ -6,7 +6,9 @@ there is no need to install esptool
 downloading:
 flashing:
 
-git clone git@github.com:Alex2269/esptool-sonoff.git
+
+git clone https://github.com/Alex2269/esptool-sonoff
+
 
 for esp8266 RavenSystem:
 cd esptool-sonoff/RavenSystem
