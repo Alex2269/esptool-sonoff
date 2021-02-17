@@ -5,8 +5,8 @@ export PATH=$(pwd)/../esptool:$PATH
 # VARIANT="haaboot"
 # VARIANT="haa_lcm"
 # VARIANT="haamain"
-# VARIANT="otaboot"
-VARIANT="fullhaaboot"
+VARIANT="otaboot"
+
 
 PORT="/dev/ttyUSB0"
 SPEED="460800"
@@ -26,7 +26,9 @@ esptool.py \
             -fs $FLASH_SIZE \
             -fm dout \
             -ff 40m \
-            0x000 firmware/$VARIANT.bin
+            0x0 firmware/rboot.bin \
+            0x1000 firmware/blank_config.bin \
+            0x2000 firmware/$VARIANT.bin
 
 
 # is not required below
