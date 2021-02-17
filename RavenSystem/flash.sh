@@ -2,9 +2,9 @@
 
 export PATH=$(pwd)/../esptool:$PATH
 
-# VARIANT="haaboot"
+VARIANT="haaboot"
 # VARIANT="haa_lcm"
-VARIANT="haamain"
+# VARIANT="haamain"
 
 
 PORT="/dev/ttyUSB0"
